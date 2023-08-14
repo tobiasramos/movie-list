@@ -1,11 +1,10 @@
 import "./App.css";
-import MovieCard from "./components/movieCard/movieCard";
+import Home from "./components/page/home/home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Lista de Filmes</h1>
-      <MovieCard />
+      <Home />
     </div>
   );
 }
