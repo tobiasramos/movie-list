@@ -17,7 +17,6 @@ const MovieCard = () => {
       })
       .then((response) => {
         setMovies(response.data.results);
-        console.log(response.data.results);
       })
       .catch((error) => {
         console.log("Erro ao consultar a API:", error);

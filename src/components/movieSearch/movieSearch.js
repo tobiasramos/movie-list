@@ -21,7 +21,6 @@ const MovieSearch = () => {
       .then((response) => {
         setMovies(response.data.results);
         setSearchTerm(searchQuery);
-        console.log(response.data.results);
       })
       .catch((error) => {
         console.log("Erro ao consultar a API:", error);
@@ -29,7 +28,7 @@ const MovieSearch = () => {
   };
 
   return (
-    <div>
+    <MovieSearchContainer>
       <Logo>Movie List</Logo>
       <SearchContainer>
         <input
@@ -50,9 +49,13 @@ const MovieSearch = () => {
           <Card key={movie.id} movie={movie} />
         ))}
       </CardContainer>
-    </div>
+    </MovieSearchContainer>
   );
 };
+
+const MovieSearchContainer = styled.div`
+  margin-left: 12px;
+`;
 
 const Logo = styled.h1`
   color: #db0000;
