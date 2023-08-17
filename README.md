@@ -1,6 +1,6 @@
 # Movie List
 
-O movie list como o próprio nome sugere é uma lista de filmes. Ao abrir a aplicação serão exibidos os 20 filmes mais populares e na parte superior o usuário pode pesquisar pelo nome do filme que deseja. Ainda está faltando uma funcionalidade que é navegar para uma nova página ao clicar em detalhes, lá terá mais especificações do filme.
+O movie list como o próprio nome sugere é uma lista de filmes. Ao abrir a aplicação serão exibidos os 20 filmes mais populares, na parte superior o usuário pode pesquisar pelo nome do filme que deseja e em cada card do filme tem sua foto de capa, título e um botão de detalhes, que ao clicar nele você é direcionado para uma página com mais especificações do respectivo filme. 
 
 ## Instalação
 
