@@ -26,7 +26,7 @@ const MovieCard = () => {
   return (
     <CardContainer>
        {movies.map((movie) => (
-        <Card key={movie.id} movie={movie} />
+        <Card key={movie.id} movie={movie} showDetailsButton={true} />
       ))}
     </CardContainer>
   );
