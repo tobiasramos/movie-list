@@ -3,7 +3,7 @@ import axios from "axios";
 import { styled } from "styled-components";
 import Card from "../card/card";
 
-const MovieSearch = () => {
+const MovieSearch = ({onSearch}) => {
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
@@ -21,6 +21,7 @@ const MovieSearch = () => {
       .then((response) => {
         setMovies(response.data.results);
         setSearchTerm(searchQuery);
+        onSearch(response.data.results);
       })
       .catch((error) => {
         console.log("Erro ao consultar a API:", error);
