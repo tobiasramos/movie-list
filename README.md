@@ -22,4 +22,4 @@ O movie list como o próprio nome sugere é uma lista de filmes. Ao abrir a apli
 
 ## Projeto em execução
 
-![tela](./tela.gif)
+[![tela](./tela.gif)](https://movie-list-git-main-tobias-ramos-projects.vercel.app/)
